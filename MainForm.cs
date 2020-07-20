@@ -48,7 +48,7 @@ namespace ScriptRunner
         {
             InputControls = new List<System.Windows.Forms.Control>();
 
-            foreach (var control in Config.Controls)
+            foreach (var control in Config.Controls.Reverse())
             {
                 System.Windows.Forms.Control formControl = null;
 

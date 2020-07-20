@@ -13,13 +13,13 @@
   },
   "Controls": [
     {
-      "Label": "Number Selector",
-      "Alias": "%SOME_NUMERIC_VALUE%",
-      "Type": "NumericUpDown",
-      "Default": 69,
+      "Label": "Some Text Value",
+      "Alias": "%SOME_TEXT_VALUE%",
+      "Type": "TextBox",
+      "Default": null,
       "Required": true,
       "Locked": false,
-      "TabIndex": 3
+      "TabIndex": 0
     },
     {
       "Label": "Some Dropdown",
@@ -50,13 +50,13 @@
       "TabIndex": 1
     },
     {
-      "Label": "Some Text Value",
-      "Alias": "%SOME_TEXT_VALUE%",
-      "Type": "TextBox",
-      "Default": null,
+      "Label": "Number Selector",
+      "Alias": "%SOME_NUMERIC_VALUE%",
+      "Type": "NumericUpDown",
+      "Default": 69,
       "Required": true,
       "Locked": false,
-      "TabIndex": 0
+      "TabIndex": 3
     }
   ],
   "Scripts": [
