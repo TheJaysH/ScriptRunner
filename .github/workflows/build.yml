@@ -16,8 +16,8 @@ jobs:
       uses: warrenbuckley/Setup-MSBuild@v1
     - name: Build with MSBuild
       run: msbuild  .\ScriptRunner.sln -p:Configuration=Release
-    - name: 'Upload Build'
-    - uses: actions/upload-artifact@v2
+    - name: Upload Build
+      uses: actions/upload-artifact@v2
       with:
         name: release
         path: \**\* 
