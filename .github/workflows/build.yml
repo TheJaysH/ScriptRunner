@@ -1,4 +1,4 @@
-name: NetFrameWork.Legacy.CI
+name: ScriptRunner.Legacy.CI
 
 on: [push]
  
@@ -7,8 +7,12 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v1       
+    - uses: actions/checkout@v1
+    - name: Setup Nuget.exe
+      uses: warrenbuckley/Setup-Nuget@v1
+    - name: Restore packages
+      run: nuget restore .\ScriptRunner.sln
     - name: Setup MSBuild.exe
       uses: warrenbuckley/Setup-MSBuild@v1
     - name: Build with MSBuild
-      run: msbuild  ScriptRunner.sln -p:Configuration=Release
+      run: msbuild  .\ScriptRunner.sln -p:Configuration=Release
