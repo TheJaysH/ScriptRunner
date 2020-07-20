@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ScriptRunner.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SHOW_DEBUG" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="LOG_PATH" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Temp\%CUSTOMER_ID%.log.txt</Value>
+    </Setting>
+    <Setting Name="FORM_TITLE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Powershell Script Runner</Value>
+    </Setting>
+    <Setting Name="LOGO_PATH" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">logo-placeholder.png</Value>
+    </Setting>
+    <Setting Name="SPLITTER_ORIENTATION" Type="System.Windows.Forms.Orientation" Scope="Application">
+      <Value Profile="(Default)">Horizontal</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

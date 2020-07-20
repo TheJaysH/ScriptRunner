@@ -1,0 +1,34 @@
+﻿{
+  [
+    {
+      "Index": 0,
+      "Description": "This is the first",
+      "FullPath": "C:\\Temp\\TestScripts\\test_first.ps1",
+      "Arguments": [
+        {
+          "Key": "CustomerID",
+          "Value": "%CUSTOMER_ID%"
+        },
+        {
+          "Key": "Gateway",
+          "Value": "%GATEWAY%"
+        },
+        {
+          "Key": "Farm",
+          "Value": "%FARM%"
+        }
+      ]
+    },
+    {
+      "Index": 1,
+      "Description": "This is the first",
+      "FullPath": "C:\\Temp\\TestScripts\\test_Second.ps1",
+      "Arguments": [
+        {
+          "Key": "CustomerID",
+          "Value": "%CUSTOMER_ID%"
+        }
+      ]
+    }
+  ]
+}
