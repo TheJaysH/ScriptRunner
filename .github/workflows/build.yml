@@ -1,0 +1,11 @@
+name: NetFrameWork.Legacy.CI
+
+on: [push]
+ 
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Build with MSBuild
+      run: msbuild  ScriptRunner -p:Configuration=Release
