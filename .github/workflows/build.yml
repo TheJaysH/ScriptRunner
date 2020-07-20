@@ -19,7 +19,7 @@ jobs:
     - name: Upload Build
       uses: actions/upload-artifact@v2
       with:
-        name: Script Runner $(appveyor_build_version)
+        name: Script Runner
         path: bin\Release\*
  
    
