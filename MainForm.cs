@@ -97,7 +97,6 @@ namespace ScriptRunner
                         //TODO: throw new Exception();
                         break;
                 }
-
                 
                 formControl.Dock = DockStyle.Top;
                 formControl.Margin = new Padding(0, 0, 0, 5);
