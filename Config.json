@@ -1,21 +1,21 @@
 ﻿{
   "_comments": {
-      "_global": [
-          "Controls are the controls to be added for user input",
-          "Scripts are the scripts to be added"
-        ],
-      "_controls": [
-          "A control can be one of 2 types: 'ComboBox' Or 'TextBox'",
-          "The 'Alias' property is whats used to reference the form value to the script paramater value",
-          "The 'Default' property is contextual to the control type. For ComboBox it is the index of the desired value, for TextBox it is the string value to be used. 'null' is no value",
-          "The 'Required' property is used if the control requires some data to enable the 'OK' button. The 'OK' button will only become enabled when ALL required controls have valid data."
-        ]
+    "_global": [
+      "Controls are the controls to be added for user input",
+      "Scripts are the scripts to be added"
+    ],
+    "_controls": [
+      "A control can be one of 2 types: 'ComboBox' Or 'TextBox'",
+      "The 'Alias' property is whats used to reference the form value to the script paramater value",
+      "The 'Default' property is contextual to the control type. For ComboBox it is the index of the desired value, for TextBox it is the string value to be used. 'null' is no value",
+      "The 'Required' property is used if the control requires some data to enable the 'OK' button. The 'OK' button will only become enabled when ALL required controls have valid data."
+    ]
   },
   "Controls": [
     {
       "Label": "Number Selector",
       "Alias": "%SOME_NUMERIC_VALUE%",
-      "Type": "NumericUpDown",      
+      "Type": "NumericUpDown",
       "Default": 69,
       "Required": true,
       "Locked": false,
@@ -61,53 +61,58 @@
   ],
   "Scripts": [
     {
-      "Description": "This is the first",
-      "FullPath": "C:\\Temp\\TestScripts\\test_first.ps1",
+      "Description": "This script will fail",
+      "FullPath": "TestScripts\\test_fail.ps1",
       "Enabled": false,
       "Parameters": [
         {
-          "Key": "CustomerID",
+          "Key": "TextValue",
           "Value": "%SOME_TEXT_VALUE%"
         },
         {
-          "Key": "ANOTHER_DROPDOWN",
+          "Key": "DropDownValue_0",
+          "Value": "%SOME_DROPDOWN%"
+        },
+        {
+          "Key": "DropDownValue_1",
           "Value": "%ANOTHER_DROPDOWN%"
         },
         {
-          "Key": "SOME_DROPDOWN",
-          "Value": "%SOME_DROPDOWN%"
+          "Key": "NumberValue",
+          "Value": "%SOME_NUMERIC_VALUE%"
         }
+
       ]
     },
     {
       "Description": "This is the second Script",
-      "FullPath": "C:\\Temp\\TestScripts\\test_Second.ps1",
+      "FullPath": "TestScripts\\test_success.ps1",
       "Enabled": true,
       "Parameters": [
         {
-          "Key": "CustomerID",
+          "Key": "TextValue",
           "Value": "%SOME_TEXT_VALUE%"
         }
       ]
     },
     {
       "Description": "This is the third",
-      "FullPath": "C:\\Temp\\TestScripts\\test_Second.ps1",
+      "FullPath": "TestScripts\\test_success.ps1",
       "Enabled": true,
       "Parameters": [
         {
-          "Key": "CustomerID",
+          "Key": "TextValue",
           "Value": "%SOME_TEXT_VALUE%"
         }
       ]
     },
     {
       "Description": "This is the fourth",
-      "FullPath": "C:\\Temp\\TestScripts\\test_Second.ps1",
+      "FullPath": "TestScripts\\test_success.ps1",
       "Enabled": true,
       "Parameters": [
         {
-          "Key": "CustomerID",
+          "Key": "TextValue",
           "Value": "%SOME_TEXT_VALUE%"
         }
       ]
