@@ -1,11 +1,11 @@
-name: ScriptRunner.Legacy.CI
+name: ScriptRunner.Build.Release
 
 on: [push]
  
 jobs:
   build:
     runs-on: windows-latest
-
+    name: Build Solution
     steps:
     - uses: actions/checkout@v1
     - name: Setup Nuget.exe
@@ -19,9 +19,9 @@ jobs:
   
   upload:
    runs-on: windows-latest
-   name: 'Upload a Build Artifact'
+   name: 'Upload Build'
    steps:
    - uses: actions/upload-artifact@v2
      with:
        name: release
-       path: ScriptRunner\bin\Release\
+       path: D:\a\ScriptRunner\ScriptRunner\bin\Release\
