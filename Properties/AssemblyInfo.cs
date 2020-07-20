@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ScriptRunner")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A WinForm utility to execute powershell scripts with supplied parameters")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Halfbyte Media")]
 [assembly: AssemblyProduct("ScriptRunner")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCopyright("Copyright © Halfbyte Media  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
