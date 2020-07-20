@@ -16,3 +16,12 @@ jobs:
       uses: warrenbuckley/Setup-MSBuild@v1
     - name: Build with MSBuild
       run: msbuild  .\ScriptRunner.sln -p:Configuration=Release
+  
+  upload:
+   runs-on: windows-latest
+   name: 'Upload a Build Artifact'
+   steps:
+   - uses: actions/upload-artifact@v2
+     with:
+       name: release
+       path: ScriptRunner\bin\Release\
